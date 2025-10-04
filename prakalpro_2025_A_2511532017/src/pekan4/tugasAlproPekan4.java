@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class tugasAlproPekan4 {
 
 	public static void main(String[] args) {
-		double biayaDasar = 22500.0;
 		
 		Scanner input = new Scanner (System.in);
 	
@@ -23,6 +22,15 @@ public class tugasAlproPekan4 {
 		
 		System.out.println("masukkan jenis paket (1=Dokumen, 2=Barang Biasa, 3=Barang Elektronik) :");
 		int jenisPaket = input.nextInt();
+		
+		//menentukan biaya dasar
+		double biayaDasar=0;
+		if (beratPaket >10) {
+			biayaDasar = 30000;
+		}else  {
+			biayaDasar = 22500;
+		}
+		
 		
 		//menentukan biaya jarak
 		double biayaJarak = 0;
