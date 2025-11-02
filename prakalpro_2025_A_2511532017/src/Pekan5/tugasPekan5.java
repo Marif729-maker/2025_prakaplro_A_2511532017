@@ -9,10 +9,11 @@ public class tugasPekan5 {
 				System.out.print(".");
 			}
 			System.out.print(line);
-		
-			System.out.println();
+		for (int i = 1; i< line ; i++) {
+			System.out.print(".");
 		}
-
+		System.out.println();
+		}
 	}
 
 	}
