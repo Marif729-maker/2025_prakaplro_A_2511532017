@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package Pekan7_2511532017;
 
 import java.util.Scanner;
@@ -27,3 +28,34 @@ public class BilanganPrima_2511532017 {
 	}
 
 }
+=======
+package Pekan7_2511532017;
+
+import java.util.Scanner;
+
+public class BilanganPrima_2511532017 {
+	public static boolean isPrime(int n) {
+		int factors = 0;
+		for (int i=1; i<=n; i++) {
+			if (n%i ==0) {
+				factors++;
+				
+			}
+		}
+		return (factors==2);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner (System.in);
+		System.out.print("Input nilai n :");
+		int a = input.nextInt();
+		if (isPrime(a)) {
+			System.out.println(a+" bilangan Prima");
+			
+		}else {
+			System.out.println(a+ " bukan bilangan Prima");
+		}
+	}
+
+}
+>>>>>>> branch 'master' of https://github.com/Marif729-maker/2025_prakaplro_A_2511532017
